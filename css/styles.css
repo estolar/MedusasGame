@@ -10,32 +10,32 @@ body, html {
   width: 100vw;
   height: 100vh;
   position: relative; /* Asegúrate de que #game-container sea relativo para posicionar pseudo-elementos */
-  
+
   /* Agrega un color de fondo sólido como base */
   background-color: #000022;
-  
+
   /* Superpone un degradado radial para crear profundidad */
-  background-image: 
+  background-image:
     radial-gradient(circle at 20% 20%, #002244 0%, transparent 60%),
     radial-gradient(circle at 80% 10%, #0a0a1a 0%, transparent 50%),
     radial-gradient(circle at 50% 50%, #000011 0%, transparent 50%);
-  
+
   /* Agrega un patrón de estrellas */
-  background-image: 
-    url('fondo.png'), /* Imagen de estrellas pequeñas */
+  background-image:
+    url('../assets/images/fondo.png'), /* Imagen de estrellas pequeñas */
     radial-gradient(circle at 20% 20%, #002244 0%, transparent 60%),
     radial-gradient(circle at 80% 10%, #0a0a1a 0%, transparent 50%),
     radial-gradient(circle at 50% 50%, #000011 0%, transparent 50%);
-  
+
   /* Fija el fondo para que no se mueva con el juego */
   background-attachment: fixed;
-  
+
   /* Define cómo se deben comportar las imágenes de fondo */
   background-size: 100%, cover, cover, cover;
-  
+
   /* Asegúrate de que el patrón de estrellas se repite a lo largo de todo el contenedor */
-  
-  
+
+
   /* Coloca el fondo de estrellas detrás de todos los gradientes */
   background-position: center;
 }
@@ -59,7 +59,7 @@ body, html {
 #cannon {
   width: 50px; /* Ajusta al tamaño de tu imagen */
   height: 50px; /* Ajusta al tamaño de tu imagen */
-  background-image: url('canon.png'); /* Actualiza con la ruta correcta */
+  background-image: url('../assets/images/canon.png'); /* Actualiza con la ruta correcta */
   background-size: contain; /* Asegúrate de que la imagen se ajuste al tamaño del contenedor */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   position: absolute;
@@ -81,7 +81,7 @@ body, html {
   position: absolute;
   width: 50px;  /* Ancho del alien, ajusta según el tamaño de tu imagen */
   height: 50px; /* Altura del alien, ajusta según el tamaño de tu imagen */
-  background-image: url('alien2.png'); /* Asegúrate de que la ruta sea correcta */
+  background-image: url('../assets/images/alien2.png'); /* Asegúrate de que la ruta sea correcta */
   background-size: cover; /* Esto asegurará que la imagen cubra completamente el elemento */
   image-rendering: pixelated; /* Esto mantendrá el aspecto pixelado al escalar */
 }
