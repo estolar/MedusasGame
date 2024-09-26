@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEDUSAS VOIID ATTACK</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<!-- METAS FACEBOOK -->
+			<meta property="og:url"           content="http://enriquestolar.com/medusa" />
+			<meta property="og:type"          content="website" />
+			<meta property="og:title"         content="Medusa Voiid Attack" />
+			<meta property="og:description"   content="Medusa Voiid Attack" />
+			<meta property="og:image"         content="https://enriquestolar.com/medusa/logo-game.png" />	
+		<!-- FIN METAS FACEBOOK -->
+
+</head>
+<body>
+
+<div id="story-screen" class="screen">
+  <h2>La Invasión de las Medusas</h2>
+  <p>En un lejano futuro, la Tierra ha sido invadida por medusas espaciales. Es tu deber como último defensor de la humanidad usar tu cañón para detener la invasión y salvar el planeta.</p>
+  <button id="start-game-button">Comenzar</button>
+</div>
+
+
+<div id="start-screen">
+  <img src="start-game.png" alt="Medusa's Void Attack">
+  <button id="start-button">VAMOS A MATAR MEDUSAS</button>
+</div>
+
+<div id="end-screen" class="screen" style="display: none;">
+  <img src="end-game.png" alt="Game Over">
+  <button id="restart-button">VAMOS DE NUEVO</button>
+</div>
+
+<div id="end-screen" style="display: none;">
+  <img src="pause-alien.png" alt="Pause" />
+</div>
+
+
+<div id="game-container">
+    <div id="cannon"></div>
+	<div id="hud">
+	  <div id="score">Score: 0</div>
+	  <div id="lives">Lives: 3</div>
+	</div>	
+	<!-- Los aliens se generarán y agregarán aquí dinámicamente -->
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
